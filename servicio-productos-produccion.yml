@@ -1,0 +1,8 @@
+server:
+    port: ${PORT:0}
+    
+configuracion: produccion
+
+#ip bases
+ipBaseVentaCafe: 10.1.10.212
+ipBaseCorreosActiveDirectory: 10.1.10.212

@@ -1,0 +1,37 @@
+spring:
+  application:
+    name: servicio-productos
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+    #Configuración Sql ejemplo - utilizar databases.properties
+  datasource:
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    password: CPTZ@VPN-2011
+    url: jdbc:sqlserver://10.1.10.88:1433;databaseName=ActiveDirectoryCorreos
+    username: Transacciones
+  jpa:
+    hibernate:
+      ddl-auto: none
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+
+server:
+  port: ${PORT:0}
+
+configuracion: desarrollo
+
+#ip bases
+ipBaseVentaCafe: 10.1.10.88
+ipBaseCorreosActiveDirectory: 10.1.10.88
+
+jwt:
+    secret: techgeeknext
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+
+
