@@ -19,7 +19,7 @@ ipBaseVentaCafe: 10.1.10.88
 ipBaseCorreosActiveDirectory: 10.1.10.88
 
 jwt:
-    secret: techgeeknext
+    secret: j3H5Ld5nYmGWyULy6xwpOgfSH++NgKXnJMq20vpfd+8=t
 
 eureka:
   client:
