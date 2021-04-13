@@ -3,12 +3,6 @@ spring:
     name: servicio-productos
   autoconfigure:
     exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
-    #Configuración Sql ejemplo - utilizar databases.properties
-  datasource:
-    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
-    password: CPTZ@VPN-2011
-    url: jdbc:sqlserver://10.1.10.88:1433;databaseName=ActiveDirectoryCorreos
-    username: Transacciones
   jpa:
     hibernate:
       ddl-auto: none
